@@ -8,4 +8,5 @@ for word in sentence:
     else:
         count_dict[word] = 1
 
-print(count_dict)
+for sentence_word, occurrences in count_dict.items():
+    print("{}: {}".format(sentence_word, occurrences))
