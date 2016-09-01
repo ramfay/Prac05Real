@@ -8,13 +8,13 @@ STATE_NAMES = {"QLD": "Queensland", "NSW": "New South Wales", "NT": "Northern Te
                "ACT": "Australian Capital Territory", "VIC": "Victoria", "TAS": "Tasmania"}
 print(STATE_NAMES)
 
-# state = input("Enter short state: ").upper()
-# while state != "":
-#     if state in STATE_NAMES:
-#         print(state, "is", STATE_NAMES[state])
-#     else:
-#         print("Invalid short state")
-#     state = input("Enter short state: ").upper()
+state = input("Enter short state: ").upper()
+while state != "":
+    if state in STATE_NAMES:
+        print(state, "is", STATE_NAMES[state])
+    else:
+        print("Invalid short state")
+    state = input("Enter short state: ").upper()
 
 for state_code, full_state_name in STATE_NAMES.items():
     print("{:4} is {:3}".format(state_code, full_state_name))
